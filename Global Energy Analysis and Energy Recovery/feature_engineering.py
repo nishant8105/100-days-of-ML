@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from data_loading_and_eda import run_eda
 
-def preprocess_data(df):
+def preprocess_data(df : pd.DataFrame = run_eda()):
     """Performs Feature Engineering and scaling necessary for modeling."""
     print("--- Starting Feature Engineering ---")
     
@@ -62,5 +62,4 @@ def preprocess_data(df):
 
 
 if __name__ == "__main__":
-    data = run_eda()
-    preprocess_data(data)
+    preprocess_data()
