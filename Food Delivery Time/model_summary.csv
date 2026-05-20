@@ -1,0 +1,4 @@
+Model,Accuracy,AUC,True Positives,False Positives,True Negatives,False Negatives
+Naive Bayes,0.525,0.48750000000000004,11,10,10,9
+KNN,0.475,0.49375,5,6,14,15
+Decision Tree,0.45,0.44500000000000006,9,11,9,11
